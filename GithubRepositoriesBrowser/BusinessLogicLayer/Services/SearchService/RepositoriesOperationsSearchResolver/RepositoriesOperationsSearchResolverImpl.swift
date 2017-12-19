@@ -36,7 +36,7 @@ class RepositoriesOperationsSearchResolverImpl: RepositoriesOperationsSearchReso
         
         var operations = [Operation]()
         
-        for i in 0..<concurrentOperationCount {
+        for i in 1 ... concurrentOperationCount {
             let searchParameters = GithubRepositorySearchParameters(name: text, page: page + i, itemsPerPage: itemsPerPage, sortType: sortType)
             let operation = GithubRepositorySearchOperation(api: api, parser: parser, requestParameters: searchParameters)
             operation.completionBlock = {

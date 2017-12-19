@@ -32,7 +32,16 @@ extension GithubRepositoryPlain {
         name = try container.decode(String.self, forKey: .name)
         url = try container.decode(String.self, forKey: .url)
         stars = try container.decode(Int.self, forKey: .stars)
-        repositoryDescription = try container.decode(String?.self, forKey: .repositoryDescription)
+        repositoryDescription = try container.decode(String?.self, forKey: .repositoryDescription)?.truncate()
         isViewed = false
+    }
+    
+    init(managedObject: GithubRepository) {
+        uuid = Int(managedObject.uuid)
+        name = managedObject.name
+        repositoryDescription = managedObject.repositoryDescription
+        stars = Int(managedObject.stars)
+        url = managedObject.url
+        isViewed = managedObject.isViewed
     }
 }
