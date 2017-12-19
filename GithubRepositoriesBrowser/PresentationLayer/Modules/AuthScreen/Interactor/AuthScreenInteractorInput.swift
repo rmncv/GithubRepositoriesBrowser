@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AuthScreenInteractorInput {
-
+    func sendAuthRequestWith(username: String, password: String)
 }

@@ -37,12 +37,14 @@ class NetworkService {
         request.httpBody = body.data(using: .utf8)
         
         let task = session.dataTask(with: request) { data, response, error in
-            guard let data = data else {
+            guard let data = data,
+                let statusCode = (response as? HTTPURLResponse)?.statusCode else {
                 let _error = error ?? RequestError.unknownError
                 completion(.error(_error))
                 return
             }
-            completion(.success(data))
+            let isSuccess = 200 ... 299 ~= statusCode
+            isSuccess ? completion(.success(data)) : completion(.error(RequestError.unknownError))
         }
         task.resume()
     }

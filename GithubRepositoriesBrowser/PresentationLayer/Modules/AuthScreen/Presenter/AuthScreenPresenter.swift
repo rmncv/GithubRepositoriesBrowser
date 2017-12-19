@@ -13,6 +13,25 @@ class AuthScreenPresenter: AuthScreenModuleInput, AuthScreenViewOutput, AuthScre
     var router: AuthScreenRouterInput!
 
     func viewIsReady() {
-
+        view.setupInitialState()
+    }
+    
+    func didPressedLoginButtonWith(usernameTextFieldText: String?, passwordTextFieldText: String?) {
+        guard let username = usernameTextFieldText,
+            let password = passwordTextFieldText else {
+                return
+        }
+        view.beginIgnoringUserInteractionAndShowActivityIndicator()
+        interactor.sendAuthRequestWith(username: username, password: password)
+    }
+    
+    func didSuccessfullyLogin() {
+        view.endIgnoringUserInteractionAndShowActivityIndicator()
+        router.dismissView()
+    }
+    
+    func didFailLogin() {
+        view.endIgnoringUserInteractionAndShowActivityIndicator()
+        view.showFailedLoginAlert()
     }
 }

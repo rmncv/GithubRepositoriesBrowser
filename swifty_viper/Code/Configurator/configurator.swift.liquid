@@ -15,6 +15,7 @@ class {{ module_info.name }}Configurator {
         }
 
         let router = {{ module_info.name }}Router()
+        router.view = viewController
         
         let presenter = {{ module_info.name }}Presenter()
         presenter.view = viewController

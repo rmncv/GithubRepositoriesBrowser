@@ -14,4 +14,7 @@ protocol AuthScreenViewInput: class {
     */
 
     func setupInitialState()
+    func beginIgnoringUserInteractionAndShowActivityIndicator()
+    func endIgnoringUserInteractionAndShowActivityIndicator()
+    func showFailedLoginAlert()
 }

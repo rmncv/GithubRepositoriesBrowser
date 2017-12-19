@@ -6,6 +6,11 @@
 //  Copyright © 2017 Denys Rumiantsev. All rights reserved.
 //
 
-class AuthScreenRouter: AuthScreenRouterInput {
+import UIKit
 
+class AuthScreenRouter: AuthScreenRouterInput {
+    weak var view: UIViewController?
+    func dismissView() {
+        view?.dismiss(animated: true, completion: nil)
+    }
 }

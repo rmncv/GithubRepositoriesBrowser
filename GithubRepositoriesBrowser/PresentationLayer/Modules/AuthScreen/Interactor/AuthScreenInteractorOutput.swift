@@ -9,5 +9,6 @@
 import Foundation
 
 protocol AuthScreenInteractorOutput: class {
-
+    func didSuccessfullyLogin()
+    func didFailLogin()
 }

@@ -14,4 +14,5 @@ protocol AuthScreenViewOutput {
     */
 
     func viewIsReady()
+    func didPressedLoginButtonWith(usernameTextFieldText: String?, passwordTextFieldText: String?)
 }

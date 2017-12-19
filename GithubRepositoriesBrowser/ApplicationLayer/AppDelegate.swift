@@ -17,7 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         AppearanceConfigurator.setup()
+        setupRootController()
         return true
+    }
+    
+    private func setupRootController() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let view = AuthScreenConfigurator().view()
+        let nav = UINavigationController(rootViewController: view)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

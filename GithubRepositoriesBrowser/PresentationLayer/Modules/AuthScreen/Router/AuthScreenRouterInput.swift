@@ -6,8 +6,9 @@
 //  Copyright © 2017 Denys Rumiantsev. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol AuthScreenRouterInput {
-
+    weak var view: UIViewController? { get }
+    func dismissView()
 }
