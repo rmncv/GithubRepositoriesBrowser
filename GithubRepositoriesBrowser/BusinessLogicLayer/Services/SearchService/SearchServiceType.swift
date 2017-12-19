@@ -10,4 +10,5 @@ import Foundation
 
 protocol SearchServiceType: class {
     func obtainRepositoriesWith(name: String, onPage: Int, itemsPerPage: Int, completion: @escaping ([GithubRepositoryPlain]) -> Void)
+    func cancelSearch()
 }

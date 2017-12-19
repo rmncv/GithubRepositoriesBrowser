@@ -12,6 +12,7 @@ class SearchServiceImpl: SearchServiceType {
     
     private let search: RepositoriesOperationsSearchResolverType
     private let dbService: GithubRepositoryDbServiceType
+    
     init(search: RepositoriesOperationsSearchResolverType = RepositoriesOperationsSearchResolverImpl(),
          dbService: GithubRepositoryDbServiceType = GithubRepositoryDbServiceImpl()) {
         self.search = search
@@ -27,5 +28,9 @@ class SearchServiceImpl: SearchServiceType {
             strongSelf.dbService.save(repositories)
             completion(repositories)
         }
+    }
+    
+    func cancelSearch() {
+        search.cancelCurrentSearch()
     }
 }

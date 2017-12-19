@@ -14,7 +14,7 @@ struct GithubRepositoryPlain: Decodable {
     let repositoryDescription: String?
     let stars: Int
     let url: String
-    let isViewed: Bool
+    private(set) var isViewed: Bool
     
     enum CodingKeys: String, CodingKey {
         case uuid = "id"
@@ -25,6 +25,14 @@ struct GithubRepositoryPlain: Decodable {
     }
 }
 
+// MARK: - Mutating funcs
+extension GithubRepositoryPlain {
+    mutating func markAsViewed() {
+        self.isViewed = true
+    }
+}
+
+// MARK: - Init
 extension GithubRepositoryPlain {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

@@ -28,7 +28,6 @@ class RepositoriesOperationsSearchResolverImpl: RepositoriesOperationsSearchReso
         cancelCurrentSearch()
         
         let resultOperation = BlockOperation {
-            debugPrint("Did call result operation completion")
             completion(self.result)
         }
 

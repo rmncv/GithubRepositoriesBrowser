@@ -36,6 +36,9 @@
 		0CD3591B1FE94F9E00BD5ABE /* GithubRepositoriesBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3591A1FE94F9E00BD5ABE /* GithubRepositoriesBrowserTests.swift */; };
 		0CD3592E1FE9525400BD5ABE /* AppCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3592D1FE9525400BD5ABE /* AppCoreDataStack.swift */; };
 		0CD359391FE95E4700BD5ABE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD359111FE94F9E00BD5ABE /* Info.plist */; };
+		0CE48E001FE9A3A200C9AF98 /* AuthServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48DFF1FE9A3A200C9AF98 /* AuthServiceImpl.swift */; };
+		0CE48E021FE9A3A700C9AF98 /* AuthServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */; };
+		0CE48E051FE9A5DF00C9AF98 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		0CD3591A1FE94F9E00BD5ABE /* GithubRepositoriesBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesBrowserTests.swift; sourceTree = "<group>"; };
 		0CD3591C1FE94F9E00BD5ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CD3592D1FE9525400BD5ABE /* AppCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreDataStack.swift; sourceTree = "<group>"; };
+		0CE48DFF1FE9A3A200C9AF98 /* AuthServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceImpl.swift; sourceTree = "<group>"; };
+		0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceType.swift; sourceTree = "<group>"; };
+		0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		0C4BD61C1FE969F8009D11A5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0CE48DFE1FE9A39400C9AF98 /* AuthService */,
 				0C4BD61D1FE96A00009D11A5 /* SearchService */,
 			);
 			path = Services;
@@ -285,8 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				0CD359021FE94F9E00BD5ABE /* AppDelegate.swift */,
-				0CD3592D1FE9525400BD5ABE /* AppCoreDataStack.swift */,
 				0CD359111FE94F9E00BD5ABE /* Info.plist */,
+				0CE48E031FE9A5D000C9AF98 /* Dependencies */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -353,6 +360,24 @@
 				0C4BD6241FE985A4009D11A5 /* Tech */,
 			);
 			path = Plain;
+			sourceTree = "<group>";
+		};
+		0CE48DFE1FE9A39400C9AF98 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				0CE48DFF1FE9A3A200C9AF98 /* AuthServiceImpl.swift */,
+				0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		0CE48E031FE9A5D000C9AF98 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				0CD3592D1FE9525400BD5ABE /* AppCoreDataStack.swift */,
+				0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +489,7 @@
 				0C4BD6291FE985DE009D11A5 /* RepositoriesOperationsSearchResolverImpl.swift in Sources */,
 				0CD3592E1FE9525400BD5ABE /* AppCoreDataStack.swift in Sources */,
 				0C4BD6211FE96A0E009D11A5 /* SearchServiceType.swift in Sources */,
+				0CE48E021FE9A3A700C9AF98 /* AuthServiceType.swift in Sources */,
 				0C4BD62B1FE985EE009D11A5 /* RepositoriesOperationsSearchResolverType.swift in Sources */,
 				0C4BD6311FE98621009D11A5 /* GithubRepositorySearchOperation.swift in Sources */,
 				0C4BD6191FE966F9009D11A5 /* APIRepositoriesSearchServiceImpl.swift in Sources */,
@@ -471,9 +497,11 @@
 				0C4BD63C1FE99349009D11A5 /* GithubRepositoryDbServiceImpl.swift in Sources */,
 				0C4BD6121FE965B1009D11A5 /* APIAuthServiceImpl.swift in Sources */,
 				0CD359031FE94F9E00BD5ABE /* AppDelegate.swift in Sources */,
+				0CE48E001FE9A3A200C9AF98 /* AuthServiceImpl.swift in Sources */,
 				0C4BD60E1FE96372009D11A5 /* GithubAPIEndpoint.swift in Sources */,
 				0C4BD61F1FE96A08009D11A5 /* SearchServiceImpl.swift in Sources */,
 				0C4BD6061FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift in Sources */,
+				0CE48E051FE9A5DF00C9AF98 /* AppearanceConfigurator.swift in Sources */,
 				0C4BD60B1FE9618B009D11A5 /* NetworkService.swift in Sources */,
 				0CD3590B1FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld in Sources */,
 				0C4BD6231FE9859A009D11A5 /* GithubRepositoryPlain.swift in Sources */,
