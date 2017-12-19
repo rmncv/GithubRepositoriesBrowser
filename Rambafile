@@ -1,0 +1,20 @@
+### Headers settings
+company: Denys Rumiantsev
+
+### Xcode project settings
+project_name: GithubRepositoriesBrowser
+xcodeproj_path: GithubRepositoriesBrowser.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: GithubRepositoriesBrowser
+
+# The file path for new modules
+project_file_path: '/GithubRepositoriesBrowser/PresentationLayer/Modules'
+
+# The Xcode group path to new modules
+project_group_path: '/GithubRepositoriesBrowser/PresentationLayer/Modules'
+
+### Templates
+templates:
+- {name: swifty_viper, local: 'swifty_viper'}
