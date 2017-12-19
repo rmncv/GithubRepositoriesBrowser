@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4BD6061FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6041FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift */; };
+		0C4BD6071FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6051FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift */; };
+		0C4BD60B1FE9618B009D11A5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD60A1FE9618B009D11A5 /* NetworkService.swift */; };
+		0C4BD60E1FE96372009D11A5 /* GithubAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD60D1FE96372009D11A5 /* GithubAPIEndpoint.swift */; };
+		0C4BD6121FE965B1009D11A5 /* APIAuthServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6111FE965B1009D11A5 /* APIAuthServiceImpl.swift */; };
+		0C4BD6141FE965B6009D11A5 /* APIAuthServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6131FE965B6009D11A5 /* APIAuthServiceType.swift */; };
+		0C4BD6161FE96669009D11A5 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6151FE96669009D11A5 /* UserDefaults+Extension.swift */; };
+		0C4BD6191FE966F9009D11A5 /* APIRepositoriesSearchServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6181FE966F9009D11A5 /* APIRepositoriesSearchServiceImpl.swift */; };
+		0C4BD61B1FE966FD009D11A5 /* APIRepositoriesSearchServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD61A1FE966FD009D11A5 /* APIRepositoriesSearchServiceType.swift */; };
 		0CD359031FE94F9E00BD5ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD359021FE94F9E00BD5ABE /* AppDelegate.swift */; };
 		0CD3590B1FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CD359091FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld */; };
 		0CD3590D1FE94F9E00BD5ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3590C1FE94F9E00BD5ABE /* Assets.xcassets */; };
 		0CD359101FE94F9E00BD5ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3590E1FE94F9E00BD5ABE /* LaunchScreen.storyboard */; };
 		0CD3591B1FE94F9E00BD5ABE /* GithubRepositoriesBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3591A1FE94F9E00BD5ABE /* GithubRepositoriesBrowserTests.swift */; };
 		0CD3592E1FE9525400BD5ABE /* AppCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD3592D1FE9525400BD5ABE /* AppCoreDataStack.swift */; };
+		0CD359391FE95E4700BD5ABE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD359111FE94F9E00BD5ABE /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4BD6041FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubRepository+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C4BD6051FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubRepository+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C4BD60A1FE9618B009D11A5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0C4BD60D1FE96372009D11A5 /* GithubAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIEndpoint.swift; sourceTree = "<group>"; };
+		0C4BD6111FE965B1009D11A5 /* APIAuthServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthServiceImpl.swift; sourceTree = "<group>"; };
+		0C4BD6131FE965B6009D11A5 /* APIAuthServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthServiceType.swift; sourceTree = "<group>"; };
+		0C4BD6151FE96669009D11A5 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		0C4BD6181FE966F9009D11A5 /* APIRepositoriesSearchServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepositoriesSearchServiceImpl.swift; sourceTree = "<group>"; };
+		0C4BD61A1FE966FD009D11A5 /* APIRepositoriesSearchServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepositoriesSearchServiceType.swift; sourceTree = "<group>"; };
 		0CD358FF1FE94F9E00BD5ABE /* GithubRepositoriesBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubRepositoriesBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD359021FE94F9E00BD5ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD3590A1FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GithubRepositoriesBrowser.xcdatamodel; sourceTree = "<group>"; };
@@ -56,6 +75,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4BD6031FE96136009D11A5 /* GithubRepository */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD6041FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift */,
+				0C4BD6051FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift */,
+			);
+			path = GithubRepository;
+			sourceTree = "<group>";
+		};
+		0C4BD6081FE96179009D11A5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD60F1FE96596009D11A5 /* APIServices */,
+				0C4BD60C1FE96363009D11A5 /* APIEndpoints */,
+				0C4BD6091FE9617F009D11A5 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0C4BD6091FE9617F009D11A5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD60A1FE9618B009D11A5 /* NetworkService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0C4BD60C1FE96363009D11A5 /* APIEndpoints */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD60D1FE96372009D11A5 /* GithubAPIEndpoint.swift */,
+			);
+			path = APIEndpoints;
+			sourceTree = "<group>";
+		};
+		0C4BD60F1FE96596009D11A5 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD6171FE966E6009D11A5 /* APIRepositoriesSearchService */,
+				0C4BD6101FE965A5009D11A5 /* APIAuthService */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		0C4BD6101FE965A5009D11A5 /* APIAuthService */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD6111FE965B1009D11A5 /* APIAuthServiceImpl.swift */,
+				0C4BD6131FE965B6009D11A5 /* APIAuthServiceType.swift */,
+			);
+			path = APIAuthService;
+			sourceTree = "<group>";
+		};
+		0C4BD6171FE966E6009D11A5 /* APIRepositoriesSearchService */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BD6181FE966F9009D11A5 /* APIRepositoriesSearchServiceImpl.swift */,
+				0C4BD61A1FE966FD009D11A5 /* APIRepositoriesSearchServiceType.swift */,
+			);
+			path = APIRepositoriesSearchService;
+			sourceTree = "<group>";
+		};
 		0CD358F61FE94F9E00BD5ABE = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +198,7 @@
 		0CD359271FE9506A00BD5ABE /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0C4BD6081FE96179009D11A5 /* Network */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -133,6 +215,7 @@
 		0CD359291FE9508A00BD5ABE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0C4BD6151FE96669009D11A5 /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +231,7 @@
 		0CD3592B1FE9512500BD5ABE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				0C4BD6031FE96136009D11A5 /* GithubRepository */,
 				0CD359091FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -245,6 +329,7 @@
 			files = (
 				0CD359101FE94F9E00BD5ABE /* LaunchScreen.storyboard in Resources */,
 				0CD3590D1FE94F9E00BD5ABE /* Assets.xcassets in Resources */,
+				0CD359391FE95E4700BD5ABE /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +347,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4BD61B1FE966FD009D11A5 /* APIRepositoriesSearchServiceType.swift in Sources */,
+				0C4BD6071FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift in Sources */,
 				0CD3592E1FE9525400BD5ABE /* AppCoreDataStack.swift in Sources */,
+				0C4BD6191FE966F9009D11A5 /* APIRepositoriesSearchServiceImpl.swift in Sources */,
+				0C4BD6121FE965B1009D11A5 /* APIAuthServiceImpl.swift in Sources */,
 				0CD359031FE94F9E00BD5ABE /* AppDelegate.swift in Sources */,
+				0C4BD60E1FE96372009D11A5 /* GithubAPIEndpoint.swift in Sources */,
+				0C4BD6061FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift in Sources */,
+				0C4BD60B1FE9618B009D11A5 /* NetworkService.swift in Sources */,
 				0CD3590B1FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld in Sources */,
+				0C4BD6161FE96669009D11A5 /* UserDefaults+Extension.swift in Sources */,
+				0C4BD6141FE965B6009D11A5 /* APIAuthServiceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GithubRepositoriesBrowser/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GithubRepositoriesBrowser/ApplicationLayer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = denysrumiantsev.GithubRepositoriesBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GithubRepositoriesBrowser/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GithubRepositoriesBrowser/ApplicationLayer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = denysrumiantsev.GithubRepositoriesBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
