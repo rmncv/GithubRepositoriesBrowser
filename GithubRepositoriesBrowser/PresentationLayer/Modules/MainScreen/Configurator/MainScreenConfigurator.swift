@@ -1,5 +1,5 @@
 //
-//  AuthScreenAuthScreenConfigurator.swift
+//  MainScreenMainScreenConfigurator.swift
 //  GithubRepositoriesBrowser
 //
 //  Created by Denis Rumiantsev on 19/12/2017.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-class AuthScreenConfigurator {
-    func view() -> AuthScreenViewController {
-        guard let viewController = UIStoryboard(name: String(describing: AuthScreenViewController.self), bundle: nil).instantiateInitialViewController() as? AuthScreenViewController else {
+class MainScreenConfigurator {
+    func view() -> MainScreenViewController {
+        guard let viewController = UIStoryboard(name: String(describing: MainScreenViewController.self), bundle: nil).instantiateInitialViewController() as? MainScreenViewController else {
             preconditionFailure()
         }
 
-        let router = AuthScreenRouter()
+        let router = MainScreenRouter()
         router.view = viewController
         
-        let presenter = AuthScreenPresenter()
+        let presenter = MainScreenPresenter()
         presenter.view = viewController
         presenter.router = router
         
-        let interactor = AuthScreenInteractor()
+        let interactor = MainScreenInteractor()
         interactor.output = presenter
         
         presenter.interactor = interactor

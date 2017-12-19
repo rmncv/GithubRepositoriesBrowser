@@ -10,6 +10,7 @@ import UIKit
 
 class AuthScreenRouter: AuthScreenRouterInput {
     weak var view: UIViewController?
+    
     func dismissView() {
         view?.dismiss(animated: true, completion: nil)
     }

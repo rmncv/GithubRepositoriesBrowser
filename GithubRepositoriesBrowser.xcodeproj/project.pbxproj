@@ -41,16 +41,28 @@
 		0CE48E021FE9A3A700C9AF98 /* AuthServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */; };
 		0CE48E051FE9A5DF00C9AF98 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */; };
 		0FD9FF2C8E2574037B171C38 /* AuthScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B319B07169D206FD9022B7 /* AuthScreenModuleInput.swift */; };
+		10A418126A32D00A9C30017A /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFCFDBB3C134C6DAD3C634 /* MainScreenViewInput.swift */; };
 		17AF2072CD0ACED3FB7AEE9E /* AuthScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE42BBA9BACD0BE3382B80 /* AuthScreenViewInput.swift */; };
+		301E2F8B12A0CBB9DDB290A1 /* MainScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F85FACD6C3434E087283B /* MainScreenModuleInput.swift */; };
+		3075950B410E9040A28927C4 /* MainScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF2101ED71CDBDA4C82A66 /* MainScreenRouterInput.swift */; };
+		400A4DAC8776F58CDF08C3A5 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C9A1085729F28FE3051D8 /* MainScreenViewController.swift */; };
 		45DB1D969A07894AE908516C /* AuthScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB573D0B14274FE07AD6468 /* AuthScreenPresenter.swift */; };
+		45E5949E26C5ECF9EDD5E549 /* MainScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51653C11B55E2BD7613DDE7A /* MainScreenConfigurator.swift */; };
 		480A87B8A791DE0004D52696 /* AuthScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63819F8594435AF6FB52A96E /* AuthScreenViewOutput.swift */; };
 		512E66C1396DD6A1B8856E0E /* AuthScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B67E79AF8A377AE435159EB /* AuthScreenRouter.swift */; };
 		74B6D70907117F8636453A6D /* AuthScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E893D00FAFA7C30925FD16 /* AuthScreenInteractorInput.swift */; };
 		7D9D03489906378EBB6FFB09 /* AuthScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7ADB8D19C9739A7854AA3 /* AuthScreenConfigurator.swift */; };
+		802E42E17308D4A4F7281FAB /* MainScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C32578C875F528A13971C5 /* MainScreenViewOutput.swift */; };
+		9F0D2B0A5C9CDBAE50076FC1 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D841426DC2178EBAAAF3C4 /* MainScreenPresenter.swift */; };
 		A61FB24EA9A9EF828AC7E9FC /* AuthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C69A7E7C64352BB52BF2E /* AuthScreenViewController.swift */; };
+		AF657EB2F2A963CB1DA5140F /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */; };
+		B34D7DABDA84464E71F24B9D /* MainScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA011196B55639B57D85170A /* MainScreenViewController.storyboard */; };
 		BAD4DB5059AD77613C682E50 /* AuthScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5852A8EF0D4F106B7D43D0 /* AuthScreenViewController.storyboard */; };
 		BD494E860A70FEBA00742D22 /* AuthScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34BAFE0F289780E7242A0AC /* AuthScreenRouterInput.swift */; };
+		C74F538C5F267EF2CF2C270F /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83098DA4234EC2B57659DED0 /* MainScreenRouter.swift */; };
+		CB918DBD517D1F7C9AF3A15B /* MainScreenInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B7036CCDC79AE52D8C82 /* MainScreenInteractorOutput.swift */; };
 		F39ED183291EBFEF697F2FF0 /* AuthScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68851816DC5C9333DA8BDEF0 /* AuthScreenInteractor.swift */; };
+		F512D7283292C1DC6DB4DC1D /* MainScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C424F14708EBB84F17F74F8 /* MainScreenInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092F85FACD6C3434E087283B /* MainScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenModuleInput.swift; sourceTree = "<group>"; };
+		09D841426DC2178EBAAAF3C4 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
 		0C4BD6041FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubRepository+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0C4BD6051FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubRepository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0C4BD60A1FE9618B009D11A5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -100,16 +114,26 @@
 		0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceType.swift; sourceTree = "<group>"; };
 		0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
 		15E893D00FAFA7C30925FD16 /* AuthScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractorInput.swift; sourceTree = "<group>"; };
+		1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
 		26BE42BBA9BACD0BE3382B80 /* AuthScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenViewInput.swift; sourceTree = "<group>"; };
 		2B67E79AF8A377AE435159EB /* AuthScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenRouter.swift; sourceTree = "<group>"; };
 		2BA5878F3988D755EAF89B13 /* AuthScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractorOutput.swift; sourceTree = "<group>"; };
 		2D5852A8EF0D4F106B7D43D0 /* AuthScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; path = AuthScreenViewController.storyboard; sourceTree = "<group>"; };
+		3C424F14708EBB84F17F74F8 /* MainScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorInput.swift; sourceTree = "<group>"; };
 		4DB7ADB8D19C9739A7854AA3 /* AuthScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenConfigurator.swift; sourceTree = "<group>"; };
+		51653C11B55E2BD7613DDE7A /* MainScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenConfigurator.swift; sourceTree = "<group>"; };
+		52C32578C875F528A13971C5 /* MainScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewOutput.swift; sourceTree = "<group>"; };
+		5F5C9A1085729F28FE3051D8 /* MainScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		63819F8594435AF6FB52A96E /* AuthScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenViewOutput.swift; sourceTree = "<group>"; };
 		68851816DC5C9333DA8BDEF0 /* AuthScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractor.swift; sourceTree = "<group>"; };
 		714C69A7E7C64352BB52BF2E /* AuthScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenViewController.swift; sourceTree = "<group>"; };
+		83098DA4234EC2B57659DED0 /* MainScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		8ABF2101ED71CDBDA4C82A66 /* MainScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouterInput.swift; sourceTree = "<group>"; };
+		8DA6B7036CCDC79AE52D8C82 /* MainScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorOutput.swift; sourceTree = "<group>"; };
 		A34BAFE0F289780E7242A0AC /* AuthScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenRouterInput.swift; sourceTree = "<group>"; };
+		CA011196B55639B57D85170A /* MainScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; path = MainScreenViewController.storyboard; sourceTree = "<group>"; };
 		DAB573D0B14274FE07AD6468 /* AuthScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenPresenter.swift; sourceTree = "<group>"; };
+		E5EFCFDBB3C134C6DAD3C634 /* MainScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewInput.swift; sourceTree = "<group>"; };
 		F0B319B07169D206FD9022B7 /* AuthScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenModuleInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +155,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A8143A3FDB345ED176AC8C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				092F85FACD6C3434E087283B /* MainScreenModuleInput.swift */,
+				09D841426DC2178EBAAAF3C4 /* MainScreenPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		0C4BD6031FE96136009D11A5 /* GithubRepository */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				EC38D5B78973659100D2635D /* AuthScreen */,
+				CE49856469AA6752955AD051 /* MainScreen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -433,6 +468,16 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		2B6F9384D88285BC57AFEDC4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF2101ED71CDBDA4C82A66 /* MainScreenRouterInput.swift */,
+				83098DA4234EC2B57659DED0 /* MainScreenRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		3D508ECD27C945E1B1B767FA /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +487,37 @@
 			);
 			name = Interactor;
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4DDAB487267A80BB45A06425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5EFCFDBB3C134C6DAD3C634 /* MainScreenViewInput.swift */,
+				52C32578C875F528A13971C5 /* MainScreenViewOutput.swift */,
+				5F5C9A1085729F28FE3051D8 /* MainScreenViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F626CFC2F18BB536EAA1CE8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3C424F14708EBB84F17F74F8 /* MainScreenInteractorInput.swift */,
+				8DA6B7036CCDC79AE52D8C82 /* MainScreenInteractorOutput.swift */,
+				1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		76AAB25F8CEE690FAE21CD2B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				51653C11B55E2BD7613DDE7A /* MainScreenConfigurator.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		7BAB1DD920F52EA6D1D850AD /* Presenter */ = {
@@ -462,6 +538,20 @@
 			);
 			name = Router;
 			path = Router;
+			sourceTree = "<group>";
+		};
+		CE49856469AA6752955AD051 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CA011196B55639B57D85170A /* MainScreenViewController.storyboard */,
+				4DDAB487267A80BB45A06425 /* View */,
+				01A8143A3FDB345ED176AC8C /* Presenter */,
+				6F626CFC2F18BB536EAA1CE8 /* Interactor */,
+				2B6F9384D88285BC57AFEDC4 /* Router */,
+				76AAB25F8CEE690FAE21CD2B /* Configurator */,
+			);
+			name = MainScreen;
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 		EC38D5B78973659100D2635D /* AuthScreen */ = {
@@ -565,6 +655,7 @@
 				0CD3590D1FE94F9E00BD5ABE /* Assets.xcassets in Resources */,
 				0CD359391FE95E4700BD5ABE /* Info.plist in Resources */,
 				BAD4DB5059AD77613C682E50 /* AuthScreenViewController.storyboard in Resources */,
+				B34D7DABDA84464E71F24B9D /* MainScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +712,17 @@
 				BD494E860A70FEBA00742D22 /* AuthScreenRouterInput.swift in Sources */,
 				512E66C1396DD6A1B8856E0E /* AuthScreenRouter.swift in Sources */,
 				7D9D03489906378EBB6FFB09 /* AuthScreenConfigurator.swift in Sources */,
+				10A418126A32D00A9C30017A /* MainScreenViewInput.swift in Sources */,
+				802E42E17308D4A4F7281FAB /* MainScreenViewOutput.swift in Sources */,
+				400A4DAC8776F58CDF08C3A5 /* MainScreenViewController.swift in Sources */,
+				301E2F8B12A0CBB9DDB290A1 /* MainScreenModuleInput.swift in Sources */,
+				9F0D2B0A5C9CDBAE50076FC1 /* MainScreenPresenter.swift in Sources */,
+				F512D7283292C1DC6DB4DC1D /* MainScreenInteractorInput.swift in Sources */,
+				CB918DBD517D1F7C9AF3A15B /* MainScreenInteractorOutput.swift in Sources */,
+				AF657EB2F2A963CB1DA5140F /* MainScreenInteractor.swift in Sources */,
+				3075950B410E9040A28927C4 /* MainScreenRouterInput.swift in Sources */,
+				C74F538C5F267EF2CF2C270F /* MainScreenRouter.swift in Sources */,
+				45E5949E26C5ECF9EDD5E549 /* MainScreenConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupRootController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let view = AuthScreenConfigurator().view()
+        let view = MainScreenConfigurator().view()
         let nav = UINavigationController(rootViewController: view)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()

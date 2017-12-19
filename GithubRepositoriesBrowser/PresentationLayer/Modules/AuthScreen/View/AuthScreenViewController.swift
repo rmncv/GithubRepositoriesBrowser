@@ -26,6 +26,9 @@ class AuthScreenViewController: UIViewController, AuthScreenViewInput {
     func setupInitialState() {
     	navigationItem.title = "Authorization"
         activityIndicator.stopAnimating()
+        
+        let dismissButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(AuthScreenViewController.didPressedDismissButton))
+        navigationItem.leftBarButtonItem = dismissButton
     }
     
     func beginIgnoringUserInteractionAndShowActivityIndicator() {
@@ -47,5 +50,9 @@ class AuthScreenViewController: UIViewController, AuthScreenViewInput {
     // MARK: - Actions
     @IBAction func didPressedLoginButton(_ sender: UIButton) {
         output.didPressedLoginButtonWith(usernameTextFieldText: usernameTextField.text, passwordTextFieldText: passwordTextField.text)
+    }
+    
+    @objc private func didPressedDismissButton() {
+        dismiss(animated: true, completion: nil)
     }
 }
