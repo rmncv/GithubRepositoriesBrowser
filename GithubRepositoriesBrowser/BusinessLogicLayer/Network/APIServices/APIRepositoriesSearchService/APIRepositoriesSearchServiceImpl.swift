@@ -34,7 +34,8 @@ class APIRepositoriesSearchServiceImpl: APIRepositoriesSearchServiceType {
                 } catch {
                     completion(.error(.parsingError))
                 }
-            case .error(_): completion(.error(.unknown))
+            case .error(_):
+                completion(.error(.unknown))
             }
         }
     }

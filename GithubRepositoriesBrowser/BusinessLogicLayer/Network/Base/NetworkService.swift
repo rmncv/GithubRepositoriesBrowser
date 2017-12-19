@@ -30,7 +30,6 @@ class NetworkService {
     }
     
     func request(url: URL, method: HTTPMethod = .get, body: String = "", headers: [String: String] = [:], completion: @escaping (RequestResult) -> Void) {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
@@ -38,7 +37,6 @@ class NetworkService {
         request.httpBody = body.data(using: .utf8)
         
         let task = session.dataTask(with: request) { data, response, error in
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
             guard let data = data else {
                 let _error = error ?? RequestError.unknownError
                 completion(.error(_error))
