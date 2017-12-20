@@ -18,10 +18,12 @@ class MainScreenRouter: MainScreenRouterInput {
     }
     
     func showRepositoriesScreen(withSearchText text: String) {
-        
+        let repositoriesView = RepositoriesScreenConfigurator(state: .search(q: text)).view()
+        view?.navigationController?.pushViewController(repositoriesView, animated: true)
     }
     
     func showRecentSearchResultsScreen() {
-        
+        let repositoriesView = RepositoriesScreenConfigurator(state: .recent).view()
+        view?.navigationController?.pushViewController(repositoriesView, animated: true)
     }
 }

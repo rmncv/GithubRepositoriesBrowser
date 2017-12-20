@@ -12,7 +12,7 @@ import CoreData
 class GithubRepositoryDbServiceImpl: GithubRepositoryDbServiceType {
     private lazy var coreDataStack = AppCoreDataStack()
     
-    func obtainAll() -> [GithubRepositoryPlain] {
+    func obtainAll() -> [GithubRepository] {
         let request: NSFetchRequest<GithubRepository> = GithubRepository.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key: "stars", ascending: false)]
         var result = [GithubRepository]()
@@ -22,7 +22,7 @@ class GithubRepositoryDbServiceImpl: GithubRepositoryDbServiceType {
             assertionFailure()
         }
         
-        return result.map(GithubRepositoryPlain.init)
+        return result
     }
     
     func save(_ repositories: [GithubRepositoryPlain]) {

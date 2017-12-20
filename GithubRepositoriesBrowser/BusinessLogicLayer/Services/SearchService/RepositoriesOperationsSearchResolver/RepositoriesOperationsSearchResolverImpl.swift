@@ -28,15 +28,16 @@ class RepositoriesOperationsSearchResolverImpl: RepositoriesOperationsSearchReso
         cancelCurrentSearch()
         
         let resultOperation = BlockOperation {
+            debugPrint("called result")
             completion(self.result)
         }
 
         let itemsPerPage = totalItemsCount / concurrentOperationCount
         
         var operations = [Operation]()
-        
+        let lastRequestPage = page * concurrentOperationCount
         for i in 1 ... concurrentOperationCount {
-            let searchParameters = GithubRepositorySearchParameters(name: text, page: page + i, itemsPerPage: itemsPerPage, sortType: sortType)
+            let searchParameters = GithubRepositorySearchParameters(name: text, page: lastRequestPage + i, itemsPerPage: itemsPerPage, sortType: sortType)
             let operation = GithubRepositorySearchOperation(api: api, parser: parser, requestParameters: searchParameters)
             operation.completionBlock = {
                 self.lock.lock()

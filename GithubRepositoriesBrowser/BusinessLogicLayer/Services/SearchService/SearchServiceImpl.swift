@@ -30,7 +30,15 @@ class SearchServiceImpl: SearchServiceType {
         }
     }
     
+    func obtainAllRecentSearchRepositories() -> [GithubRepositoryPlain] {
+        return dbService.obtainAll().map(GithubRepositoryPlain.init)
+    }
+    
     func cancelSearch() {
         search.cancelCurrentSearch()
+    }
+    
+    func markAsViewed(_ repository: GithubRepositoryPlain) {
+        dbService.markAsViewed(repository: repository)
     }
 }

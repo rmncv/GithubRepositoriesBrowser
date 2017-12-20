@@ -53,3 +53,14 @@ extension GithubRepositoryPlain {
         isViewed = managedObject.isViewed
     }
 }
+
+extension GithubRepositoryPlain: Equatable {
+    static func == (lhs: GithubRepositoryPlain, rhs: GithubRepositoryPlain) -> Bool {
+        return lhs.uuid == rhs.uuid &&
+        lhs.name == rhs.name &&
+        lhs.repositoryDescription == rhs.repositoryDescription &&
+        lhs.stars == rhs.stars &&
+        lhs.url == rhs.url &&
+        lhs.isViewed == rhs.isViewed
+    }
+}

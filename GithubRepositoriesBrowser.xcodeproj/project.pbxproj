@@ -30,6 +30,8 @@
 		0C4BD6391FE9924A009D11A5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD6381FE9924A009D11A5 /* String+Extensions.swift */; };
 		0C4BD63C1FE99349009D11A5 /* GithubRepositoryDbServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD63B1FE99349009D11A5 /* GithubRepositoryDbServiceImpl.swift */; };
 		0C4BD63E1FE9934D009D11A5 /* GithubRepositoryDbServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD63D1FE9934D009D11A5 /* GithubRepositoryDbServiceType.swift */; };
+		0C5552A8F35E93CE8EE2A980 /* RepositoriesScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBC26AB524555620AD9290 /* RepositoriesScreenConfigurator.swift */; };
+		0CBDE7DED127A98B675F9374 /* RepositoriesScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A350113DB7C62DAB9627B94 /* RepositoriesScreenRouterInput.swift */; };
 		0CD359031FE94F9E00BD5ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD359021FE94F9E00BD5ABE /* AppDelegate.swift */; };
 		0CD3590B1FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CD359091FE94F9E00BD5ABE /* GithubRepositoriesBrowser.xcdatamodeld */; };
 		0CD3590D1FE94F9E00BD5ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3590C1FE94F9E00BD5ABE /* Assets.xcassets */; };
@@ -40,27 +42,40 @@
 		0CE48E001FE9A3A200C9AF98 /* AuthServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48DFF1FE9A3A200C9AF98 /* AuthServiceImpl.swift */; };
 		0CE48E021FE9A3A700C9AF98 /* AuthServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */; };
 		0CE48E051FE9A5DF00C9AF98 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */; };
+		0CE48E0F1FEA5BE300C9AF98 /* GithubRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E0E1FEA5BE300C9AF98 /* GithubRepositoryCell.swift */; };
+		0CE48E111FEA5BEF00C9AF98 /* GithubRepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE48E101FEA5BEF00C9AF98 /* GithubRepositoryCell.xib */; };
+		0CE48E131FEA641300C9AF98 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E121FEA641300C9AF98 /* UITableView+Extension.swift */; };
+		0D93D300A6C62959CC802F13 /* RepositoriesScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E364E90E36836D401F79A3 /* RepositoriesScreenViewController.storyboard */; };
 		0FD9FF2C8E2574037B171C38 /* AuthScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B319B07169D206FD9022B7 /* AuthScreenModuleInput.swift */; };
 		10A418126A32D00A9C30017A /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFCFDBB3C134C6DAD3C634 /* MainScreenViewInput.swift */; };
 		17AF2072CD0ACED3FB7AEE9E /* AuthScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE42BBA9BACD0BE3382B80 /* AuthScreenViewInput.swift */; };
 		301E2F8B12A0CBB9DDB290A1 /* MainScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F85FACD6C3434E087283B /* MainScreenModuleInput.swift */; };
 		3075950B410E9040A28927C4 /* MainScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF2101ED71CDBDA4C82A66 /* MainScreenRouterInput.swift */; };
+		354F0F53FC106AEE7EF06446 /* RepositoriesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4602373EF65F71FBD5F6CE /* RepositoriesScreenRouter.swift */; };
 		400A4DAC8776F58CDF08C3A5 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C9A1085729F28FE3051D8 /* MainScreenViewController.swift */; };
+		44DE56F568C845A1C7F039D1 /* RepositoriesScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98D3F21600996947AFD75C9 /* RepositoriesScreenPresenter.swift */; };
 		45DB1D969A07894AE908516C /* AuthScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB573D0B14274FE07AD6468 /* AuthScreenPresenter.swift */; };
 		45E5949E26C5ECF9EDD5E549 /* MainScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51653C11B55E2BD7613DDE7A /* MainScreenConfigurator.swift */; };
 		480A87B8A791DE0004D52696 /* AuthScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63819F8594435AF6FB52A96E /* AuthScreenViewOutput.swift */; };
 		512E66C1396DD6A1B8856E0E /* AuthScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B67E79AF8A377AE435159EB /* AuthScreenRouter.swift */; };
 		74B6D70907117F8636453A6D /* AuthScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E893D00FAFA7C30925FD16 /* AuthScreenInteractorInput.swift */; };
+		78DF8FC31FA64D4B7AC5E7A1 /* RepositoriesScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF539BACB547BBA109EF421 /* RepositoriesScreenViewOutput.swift */; };
 		7D9D03489906378EBB6FFB09 /* AuthScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7ADB8D19C9739A7854AA3 /* AuthScreenConfigurator.swift */; };
+		7EAACDDBBB7DE44C489F912B /* RepositoriesScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4EB934DBBBB6C97659D897 /* RepositoriesScreenInteractorInput.swift */; };
 		802E42E17308D4A4F7281FAB /* MainScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C32578C875F528A13971C5 /* MainScreenViewOutput.swift */; };
+		92B73B874F54594B70C3F128 /* RepositoriesScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24449A6187C08294CEDB099F /* RepositoriesScreenViewInput.swift */; };
+		98DA46FCC2220F8E21D19F04 /* RepositoriesScreenInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2032C8CB074D2CC086F967C9 /* RepositoriesScreenInteractorOutput.swift */; };
 		9F0D2B0A5C9CDBAE50076FC1 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D841426DC2178EBAAAF3C4 /* MainScreenPresenter.swift */; };
+		A12D8EA45B5510E020EDD371 /* RepositoriesScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C709D61CBD112AE357CA91 /* RepositoriesScreenModuleInput.swift */; };
 		A61FB24EA9A9EF828AC7E9FC /* AuthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C69A7E7C64352BB52BF2E /* AuthScreenViewController.swift */; };
 		AF657EB2F2A963CB1DA5140F /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */; };
+		B2C1C85F38FE3FF019F84FE1 /* RepositoriesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0022ACBA0171B4919703EC /* RepositoriesScreenViewController.swift */; };
 		B34D7DABDA84464E71F24B9D /* MainScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA011196B55639B57D85170A /* MainScreenViewController.storyboard */; };
 		BAD4DB5059AD77613C682E50 /* AuthScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5852A8EF0D4F106B7D43D0 /* AuthScreenViewController.storyboard */; };
 		BD494E860A70FEBA00742D22 /* AuthScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34BAFE0F289780E7242A0AC /* AuthScreenRouterInput.swift */; };
 		C74F538C5F267EF2CF2C270F /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83098DA4234EC2B57659DED0 /* MainScreenRouter.swift */; };
 		CB918DBD517D1F7C9AF3A15B /* MainScreenInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B7036CCDC79AE52D8C82 /* MainScreenInteractorOutput.swift */; };
+		D2055720C27EF5325F4C1EF5 /* RepositoriesScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9F3BD01A510A1A83E431B /* RepositoriesScreenInteractor.swift */; };
 		F39ED183291EBFEF697F2FF0 /* AuthScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68851816DC5C9333DA8BDEF0 /* AuthScreenInteractor.swift */; };
 		F512D7283292C1DC6DB4DC1D /* MainScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C424F14708EBB84F17F74F8 /* MainScreenInteractorInput.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +93,7 @@
 /* Begin PBXFileReference section */
 		092F85FACD6C3434E087283B /* MainScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenModuleInput.swift; sourceTree = "<group>"; };
 		09D841426DC2178EBAAAF3C4 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		0A350113DB7C62DAB9627B94 /* RepositoriesScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenRouterInput.swift; sourceTree = "<group>"; };
 		0C4BD6041FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubRepository+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0C4BD6051FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubRepository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0C4BD60A1FE9618B009D11A5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -113,12 +129,17 @@
 		0CE48DFF1FE9A3A200C9AF98 /* AuthServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceImpl.swift; sourceTree = "<group>"; };
 		0CE48E011FE9A3A700C9AF98 /* AuthServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceType.swift; sourceTree = "<group>"; };
 		0CE48E041FE9A5DF00C9AF98 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		0CE48E0E1FEA5BE300C9AF98 /* GithubRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryCell.swift; sourceTree = "<group>"; };
+		0CE48E101FEA5BEF00C9AF98 /* GithubRepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepositoryCell.xib; sourceTree = "<group>"; };
+		0CE48E121FEA641300C9AF98 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		15E893D00FAFA7C30925FD16 /* AuthScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractorInput.swift; sourceTree = "<group>"; };
 		1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		2032C8CB074D2CC086F967C9 /* RepositoriesScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenInteractorOutput.swift; sourceTree = "<group>"; };
+		24449A6187C08294CEDB099F /* RepositoriesScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenViewInput.swift; sourceTree = "<group>"; };
 		26BE42BBA9BACD0BE3382B80 /* AuthScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenViewInput.swift; sourceTree = "<group>"; };
 		2B67E79AF8A377AE435159EB /* AuthScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenRouter.swift; sourceTree = "<group>"; };
 		2BA5878F3988D755EAF89B13 /* AuthScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractorOutput.swift; sourceTree = "<group>"; };
-		2D5852A8EF0D4F106B7D43D0 /* AuthScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; path = AuthScreenViewController.storyboard; sourceTree = "<group>"; };
+		2D5852A8EF0D4F106B7D43D0 /* AuthScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = AuthScreenViewController.storyboard; sourceTree = "<group>"; };
 		3C424F14708EBB84F17F74F8 /* MainScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorInput.swift; sourceTree = "<group>"; };
 		4DB7ADB8D19C9739A7854AA3 /* AuthScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenConfigurator.swift; sourceTree = "<group>"; };
 		51653C11B55E2BD7613DDE7A /* MainScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenConfigurator.swift; sourceTree = "<group>"; };
@@ -128,13 +149,22 @@
 		68851816DC5C9333DA8BDEF0 /* AuthScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractor.swift; sourceTree = "<group>"; };
 		714C69A7E7C64352BB52BF2E /* AuthScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenViewController.swift; sourceTree = "<group>"; };
 		83098DA4234EC2B57659DED0 /* MainScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		86FBC26AB524555620AD9290 /* RepositoriesScreenConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenConfigurator.swift; sourceTree = "<group>"; };
 		8ABF2101ED71CDBDA4C82A66 /* MainScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouterInput.swift; sourceTree = "<group>"; };
 		8DA6B7036CCDC79AE52D8C82 /* MainScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorOutput.swift; sourceTree = "<group>"; };
+		8FB9F3BD01A510A1A83E431B /* RepositoriesScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenInteractor.swift; sourceTree = "<group>"; };
 		A34BAFE0F289780E7242A0AC /* AuthScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenRouterInput.swift; sourceTree = "<group>"; };
-		CA011196B55639B57D85170A /* MainScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; path = MainScreenViewController.storyboard; sourceTree = "<group>"; };
+		BF4602373EF65F71FBD5F6CE /* RepositoriesScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenRouter.swift; sourceTree = "<group>"; };
+		C9C709D61CBD112AE357CA91 /* RepositoriesScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenModuleInput.swift; sourceTree = "<group>"; };
+		CA011196B55639B57D85170A /* MainScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainScreenViewController.storyboard; sourceTree = "<group>"; };
+		CBF539BACB547BBA109EF421 /* RepositoriesScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenViewOutput.swift; sourceTree = "<group>"; };
+		D3E364E90E36836D401F79A3 /* RepositoriesScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = RepositoriesScreenViewController.storyboard; sourceTree = "<group>"; };
 		DAB573D0B14274FE07AD6468 /* AuthScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenPresenter.swift; sourceTree = "<group>"; };
 		E5EFCFDBB3C134C6DAD3C634 /* MainScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenViewInput.swift; sourceTree = "<group>"; };
+		EB0022ACBA0171B4919703EC /* RepositoriesScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenViewController.swift; sourceTree = "<group>"; };
+		ED4EB934DBBBB6C97659D897 /* RepositoriesScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenInteractorInput.swift; sourceTree = "<group>"; };
 		F0B319B07169D206FD9022B7 /* AuthScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenModuleInput.swift; sourceTree = "<group>"; };
+		F98D3F21600996947AFD75C9 /* RepositoriesScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +191,6 @@
 				092F85FACD6C3434E087283B /* MainScreenModuleInput.swift */,
 				09D841426DC2178EBAAAF3C4 /* MainScreenPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -359,6 +388,7 @@
 		0CD359261FE9506400BD5ABE /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CE48E0B1FEA5ADC00C9AF98 /* Library */,
 				0CE48E0A1FE9AEF500C9AF98 /* Modules */,
 				0CD3590E1FE94F9E00BD5ABE /* LaunchScreen.storyboard */,
 			);
@@ -390,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				0C4BD6151FE96669009D11A5 /* UserDefaults+Extension.swift */,
+				0CE48E121FEA641300C9AF98 /* UITableView+Extension.swift */,
 				0C4BD6381FE9924A009D11A5 /* String+Extensions.swift */,
 			);
 			path = Extensions;
@@ -444,8 +475,34 @@
 			children = (
 				EC38D5B78973659100D2635D /* AuthScreen */,
 				CE49856469AA6752955AD051 /* MainScreen */,
+				5D4F039BC6E50FF86AF568B1 /* RepositoriesScreen */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		0CE48E0B1FEA5ADC00C9AF98 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0CE48E0C1FEA5BC500C9AF98 /* UITableViewCell */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0CE48E0C1FEA5BC500C9AF98 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CE48E0D1FEA5BD000C9AF98 /* GithubRepositoryCell */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		0CE48E0D1FEA5BD000C9AF98 /* GithubRepositoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CE48E0E1FEA5BE300C9AF98 /* GithubRepositoryCell.swift */,
+				0CE48E101FEA5BEF00C9AF98 /* GithubRepositoryCell.xib */,
+			);
+			path = GithubRepositoryCell;
 			sourceTree = "<group>";
 		};
 		182C49061D9F6454C749CCCB /* View */ = {
@@ -455,7 +512,6 @@
 				63819F8594435AF6FB52A96E /* AuthScreenViewOutput.swift */,
 				714C69A7E7C64352BB52BF2E /* AuthScreenViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -464,7 +520,6 @@
 			children = (
 				4DB7ADB8D19C9739A7854AA3 /* AuthScreenConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -474,7 +529,6 @@
 				8ABF2101ED71CDBDA4C82A66 /* MainScreenRouterInput.swift */,
 				83098DA4234EC2B57659DED0 /* MainScreenRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -485,8 +539,16 @@
 				2BA5878F3988D755EAF89B13 /* AuthScreenInteractorOutput.swift */,
 				68851816DC5C9333DA8BDEF0 /* AuthScreenInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		40E6D90E104AC462A77068EC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A350113DB7C62DAB9627B94 /* RepositoriesScreenRouterInput.swift */,
+				BF4602373EF65F71FBD5F6CE /* RepositoriesScreenRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		4DDAB487267A80BB45A06425 /* View */ = {
@@ -496,8 +558,20 @@
 				52C32578C875F528A13971C5 /* MainScreenViewOutput.swift */,
 				5F5C9A1085729F28FE3051D8 /* MainScreenViewController.swift */,
 			);
-			name = View;
 			path = View;
+			sourceTree = "<group>";
+		};
+		5D4F039BC6E50FF86AF568B1 /* RepositoriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D3E364E90E36836D401F79A3 /* RepositoriesScreenViewController.storyboard */,
+				BDF03B3DC8EE1B056CC17366 /* View */,
+				FF7CFF555B65FC4F095946AE /* Presenter */,
+				F75CCA098FC35350816B9543 /* Interactor */,
+				40E6D90E104AC462A77068EC /* Router */,
+				9EFE12FAAC28A33EA6A7FB26 /* Configurator */,
+			);
+			path = RepositoriesScreen;
 			sourceTree = "<group>";
 		};
 		6F626CFC2F18BB536EAA1CE8 /* Interactor */ = {
@@ -507,7 +581,6 @@
 				8DA6B7036CCDC79AE52D8C82 /* MainScreenInteractorOutput.swift */,
 				1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -516,7 +589,6 @@
 			children = (
 				51653C11B55E2BD7613DDE7A /* MainScreenConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -526,8 +598,15 @@
 				F0B319B07169D206FD9022B7 /* AuthScreenModuleInput.swift */,
 				DAB573D0B14274FE07AD6468 /* AuthScreenPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9EFE12FAAC28A33EA6A7FB26 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				86FBC26AB524555620AD9290 /* RepositoriesScreenConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		B31E976ED7F336280FCADB73 /* Router */ = {
@@ -536,8 +615,17 @@
 				A34BAFE0F289780E7242A0AC /* AuthScreenRouterInput.swift */,
 				2B67E79AF8A377AE435159EB /* AuthScreenRouter.swift */,
 			);
-			name = Router;
 			path = Router;
+			sourceTree = "<group>";
+		};
+		BDF03B3DC8EE1B056CC17366 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24449A6187C08294CEDB099F /* RepositoriesScreenViewInput.swift */,
+				CBF539BACB547BBA109EF421 /* RepositoriesScreenViewOutput.swift */,
+				EB0022ACBA0171B4919703EC /* RepositoriesScreenViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CE49856469AA6752955AD051 /* MainScreen */ = {
@@ -550,7 +638,6 @@
 				2B6F9384D88285BC57AFEDC4 /* Router */,
 				76AAB25F8CEE690FAE21CD2B /* Configurator */,
 			);
-			name = MainScreen;
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
@@ -564,8 +651,26 @@
 				B31E976ED7F336280FCADB73 /* Router */,
 				1C1BB2327BD17D031D236242 /* Configurator */,
 			);
-			name = AuthScreen;
 			path = AuthScreen;
+			sourceTree = "<group>";
+		};
+		F75CCA098FC35350816B9543 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				ED4EB934DBBBB6C97659D897 /* RepositoriesScreenInteractorInput.swift */,
+				2032C8CB074D2CC086F967C9 /* RepositoriesScreenInteractorOutput.swift */,
+				8FB9F3BD01A510A1A83E431B /* RepositoriesScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FF7CFF555B65FC4F095946AE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C9C709D61CBD112AE357CA91 /* RepositoriesScreenModuleInput.swift */,
+				F98D3F21600996947AFD75C9 /* RepositoriesScreenPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -655,7 +760,9 @@
 				0CD3590D1FE94F9E00BD5ABE /* Assets.xcassets in Resources */,
 				0CD359391FE95E4700BD5ABE /* Info.plist in Resources */,
 				BAD4DB5059AD77613C682E50 /* AuthScreenViewController.storyboard in Resources */,
+				0CE48E111FEA5BEF00C9AF98 /* GithubRepositoryCell.xib in Resources */,
 				B34D7DABDA84464E71F24B9D /* MainScreenViewController.storyboard in Resources */,
+				0D93D300A6C62959CC802F13 /* RepositoriesScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +782,7 @@
 			files = (
 				0C4BD61B1FE966FD009D11A5 /* APIRepositoriesSearchServiceType.swift in Sources */,
 				0C4BD6071FE9614A009D11A5 /* GithubRepository+CoreDataProperties.swift in Sources */,
+				0CE48E131FEA641300C9AF98 /* UITableView+Extension.swift in Sources */,
 				0C4BD6361FE9863F009D11A5 /* GithubRepositoryParserType.swift in Sources */,
 				0C4BD6291FE985DE009D11A5 /* RepositoriesOperationsSearchResolverImpl.swift in Sources */,
 				0CD3592E1FE9525400BD5ABE /* AppCoreDataStack.swift in Sources */,
@@ -711,6 +819,7 @@
 				F39ED183291EBFEF697F2FF0 /* AuthScreenInteractor.swift in Sources */,
 				BD494E860A70FEBA00742D22 /* AuthScreenRouterInput.swift in Sources */,
 				512E66C1396DD6A1B8856E0E /* AuthScreenRouter.swift in Sources */,
+				0CE48E0F1FEA5BE300C9AF98 /* GithubRepositoryCell.swift in Sources */,
 				7D9D03489906378EBB6FFB09 /* AuthScreenConfigurator.swift in Sources */,
 				10A418126A32D00A9C30017A /* MainScreenViewInput.swift in Sources */,
 				802E42E17308D4A4F7281FAB /* MainScreenViewOutput.swift in Sources */,
@@ -723,6 +832,17 @@
 				3075950B410E9040A28927C4 /* MainScreenRouterInput.swift in Sources */,
 				C74F538C5F267EF2CF2C270F /* MainScreenRouter.swift in Sources */,
 				45E5949E26C5ECF9EDD5E549 /* MainScreenConfigurator.swift in Sources */,
+				92B73B874F54594B70C3F128 /* RepositoriesScreenViewInput.swift in Sources */,
+				78DF8FC31FA64D4B7AC5E7A1 /* RepositoriesScreenViewOutput.swift in Sources */,
+				B2C1C85F38FE3FF019F84FE1 /* RepositoriesScreenViewController.swift in Sources */,
+				A12D8EA45B5510E020EDD371 /* RepositoriesScreenModuleInput.swift in Sources */,
+				44DE56F568C845A1C7F039D1 /* RepositoriesScreenPresenter.swift in Sources */,
+				7EAACDDBBB7DE44C489F912B /* RepositoriesScreenInteractorInput.swift in Sources */,
+				98DA46FCC2220F8E21D19F04 /* RepositoriesScreenInteractorOutput.swift in Sources */,
+				D2055720C27EF5325F4C1EF5 /* RepositoriesScreenInteractor.swift in Sources */,
+				0CBDE7DED127A98B675F9374 /* RepositoriesScreenRouterInput.swift in Sources */,
+				354F0F53FC106AEE7EF06446 /* RepositoriesScreenRouter.swift in Sources */,
+				0C5552A8F35E93CE8EE2A980 /* RepositoriesScreenConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

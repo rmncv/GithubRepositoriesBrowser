@@ -35,7 +35,7 @@ class NetworkService {
         request.httpMethod = method.rawValue
         request.allHTTPHeaderFields = headers
         request.httpBody = body.data(using: .utf8)
-        
+        debugPrint(url)
         let task = session.dataTask(with: request) { data, response, error in
             guard let data = data,
                 let statusCode = (response as? HTTPURLResponse)?.statusCode else {

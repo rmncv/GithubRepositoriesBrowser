@@ -9,7 +9,7 @@
 import Foundation
 
 protocol GithubRepositoryDbServiceType: class {
-    func obtainAll() -> [GithubRepositoryPlain]
+    func obtainAll() -> [GithubRepository]
     func obtainRepositoryWith(_ uuid: Int32) -> GithubRepository?
     func save(_ repositories: [GithubRepositoryPlain])
     func markAsViewed(repository: GithubRepositoryPlain)
