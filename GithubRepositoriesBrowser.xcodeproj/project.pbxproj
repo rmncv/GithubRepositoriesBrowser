@@ -45,6 +45,7 @@
 		0CE48E0F1FEA5BE300C9AF98 /* GithubRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E0E1FEA5BE300C9AF98 /* GithubRepositoryCell.swift */; };
 		0CE48E111FEA5BEF00C9AF98 /* GithubRepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE48E101FEA5BEF00C9AF98 /* GithubRepositoryCell.xib */; };
 		0CE48E131FEA641300C9AF98 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E121FEA641300C9AF98 /* UITableView+Extension.swift */; };
+		0CE48E161FEA733F00C9AF98 /* URLBrowsingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE48E151FEA733F00C9AF98 /* URLBrowsingScreen.swift */; };
 		0D93D300A6C62959CC802F13 /* RepositoriesScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E364E90E36836D401F79A3 /* RepositoriesScreenViewController.storyboard */; };
 		0FD9FF2C8E2574037B171C38 /* AuthScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B319B07169D206FD9022B7 /* AuthScreenModuleInput.swift */; };
 		10A418126A32D00A9C30017A /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFCFDBB3C134C6DAD3C634 /* MainScreenViewInput.swift */; };
@@ -132,6 +133,7 @@
 		0CE48E0E1FEA5BE300C9AF98 /* GithubRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryCell.swift; sourceTree = "<group>"; };
 		0CE48E101FEA5BEF00C9AF98 /* GithubRepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepositoryCell.xib; sourceTree = "<group>"; };
 		0CE48E121FEA641300C9AF98 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		0CE48E151FEA733F00C9AF98 /* URLBrowsingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBrowsingScreen.swift; sourceTree = "<group>"; };
 		15E893D00FAFA7C30925FD16 /* AuthScreenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractorInput.swift; sourceTree = "<group>"; };
 		1E95B8A406E9A6449BA26D37 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
 		2032C8CB074D2CC086F967C9 /* RepositoriesScreenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RepositoriesScreenInteractorOutput.swift; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 		0CD359261FE9506400BD5ABE /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CE48E141FEA732900C9AF98 /* DummyScreens */,
 				0CE48E0B1FEA5ADC00C9AF98 /* Library */,
 				0CE48E0A1FE9AEF500C9AF98 /* Modules */,
 				0CD3590E1FE94F9E00BD5ABE /* LaunchScreen.storyboard */,
@@ -503,6 +506,14 @@
 				0CE48E101FEA5BEF00C9AF98 /* GithubRepositoryCell.xib */,
 			);
 			path = GithubRepositoryCell;
+			sourceTree = "<group>";
+		};
+		0CE48E141FEA732900C9AF98 /* DummyScreens */ = {
+			isa = PBXGroup;
+			children = (
+				0CE48E151FEA733F00C9AF98 /* URLBrowsingScreen.swift */,
+			);
+			path = DummyScreens;
 			sourceTree = "<group>";
 		};
 		182C49061D9F6454C749CCCB /* View */ = {
@@ -796,6 +807,7 @@
 				0C4BD6121FE965B1009D11A5 /* APIAuthServiceImpl.swift in Sources */,
 				0CD359031FE94F9E00BD5ABE /* AppDelegate.swift in Sources */,
 				0CE48E001FE9A3A200C9AF98 /* AuthServiceImpl.swift in Sources */,
+				0CE48E161FEA733F00C9AF98 /* URLBrowsingScreen.swift in Sources */,
 				0C4BD60E1FE96372009D11A5 /* GithubAPIEndpoint.swift in Sources */,
 				0C4BD61F1FE96A08009D11A5 /* SearchServiceImpl.swift in Sources */,
 				0C4BD6061FE9614A009D11A5 /* GithubRepository+CoreDataClass.swift in Sources */,

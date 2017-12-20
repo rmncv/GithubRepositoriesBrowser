@@ -12,6 +12,13 @@ class RepositoriesScreenRouter: RepositoriesScreenRouterInput {
 	weak var view: UIViewController?
     
     func showDetailsScreenFor(_ repository: GithubRepositoryPlain) {
-        
+        guard let url = URL(string: repository.url) else {
+            return
+        }
+        let vc = URLBrowsingScreen(url: url)
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalTransitionStyle = .crossDissolve
+        nav.modalPresentationStyle = .overCurrentContext
+        view?.present(nav, animated: true, completion: nil)
     }
 }
