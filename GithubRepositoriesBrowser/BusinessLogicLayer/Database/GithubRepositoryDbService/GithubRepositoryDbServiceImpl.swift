@@ -52,7 +52,8 @@ class GithubRepositoryDbServiceImpl: GithubRepositoryDbServiceType {
         guard let managedRepository = obtainRepositoryWith(Int32(repository.uuid)) else {
             return
         }
-        coreDataStack.persistentContainer.performBackgroundTask { context in
+        let context = coreDataStack.persistentContainer.viewContext
+        context.perform {
             managedRepository.isViewed = true
             do {
                 try context.save()
