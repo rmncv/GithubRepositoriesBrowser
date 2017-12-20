@@ -16,9 +16,9 @@ class RepositoriesScreenRouter: RepositoriesScreenRouterInput {
             return
         }
         let vc = URLBrowsingScreen(url: url)
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalTransitionStyle = .crossDissolve
-        nav.modalPresentationStyle = .overCurrentContext
-        view?.present(nav, animated: true, completion: nil)
+//        let nav = UINavigationController(rootViewController: vc)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overCurrentContext
+        view?.present(vc, animated: true, completion: nil)
     }
 }
