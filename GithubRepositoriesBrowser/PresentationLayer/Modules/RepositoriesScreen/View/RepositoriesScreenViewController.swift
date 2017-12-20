@@ -18,6 +18,7 @@ class RepositoriesScreenViewController: UIViewController, RepositoriesScreenView
     var repositories = [GithubRepositoryPlain]()
     var itemsPerPage: Int!
     var currentPage: Int!
+    private var editingEnabled = false
     
     private var couldLoadMore: Bool {
         
@@ -49,6 +50,8 @@ class RepositoriesScreenViewController: UIViewController, RepositoriesScreenView
             navigationItem.rightBarButtonItem = cancelButton
             
         case .recent:
+            setupRightBarButtonItemOnRecent()
+            editingEnabled = true
             navigationItem.title = "Recent"
         }
         
@@ -70,11 +73,18 @@ class RepositoriesScreenViewController: UIViewController, RepositoriesScreenView
         tableView.reloadRow(at: IndexPath(item: index, section: 0))
     }
     
+    func delete(_ repository: GithubRepositoryPlain) {
+        guard let index = repositories.index(of: repository) else {
+            return
+        }
+        repositories.remove(at: index)
+    }
+    
     func reloadData() {
         tableView.reloadData()
     }
     
-    func makeCancelSearchButton(enabled: Bool) {
+    func makeRightBarButtonItem(enabled: Bool) {
         navigationItem.rightBarButtonItem?.isEnabled = enabled
     }
     
@@ -91,9 +101,20 @@ class RepositoriesScreenViewController: UIViewController, RepositoriesScreenView
         tableViewFooterActivityIndicator = pagingSpinner
     }
     
+    private func setupRightBarButtonItemOnRecent() {
+        let item: UIBarButtonSystemItem = tableView.isEditing ? .cancel : .edit
+        let editButton = UIBarButtonItem(barButtonSystemItem: item, target: self, action: #selector(RepositoriesScreenViewController.didPressedEditButton))
+        navigationItem.rightBarButtonItem = editButton
+    }
+    
     // MARK: - Actions
     @objc private func didPressedCancelSearchButton() {
         output.didPressedCancelSearch()
+    }
+
+    @objc private func didPressedEditButton() {
+        tableView.isEditing.toggle()
+        setupRightBarButtonItemOnRecent()
     }
 }
 
@@ -132,5 +153,33 @@ extension RepositoriesScreenViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        guard editingEnabled else {
+            return nil
+        }
+        let repository = repositories[indexPath.item]
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { [unowned self] _, indexPath in
+            tableView.performOnUpdates({
+                self.output.didPressedDelete(repository)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            })
+        }
+        return [deleteAction]
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedObject = repositories[sourceIndexPath.item]
+        repositories.remove(at: sourceIndexPath.row)
+        repositories.insert(movedObject, at: destinationIndexPath.row)
     }
 }

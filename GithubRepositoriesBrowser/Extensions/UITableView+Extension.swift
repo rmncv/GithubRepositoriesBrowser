@@ -28,4 +28,10 @@ extension UITableView {
         reloadRows(at: [indexPath], with: animation)
         endUpdates()
     }
+    
+    func performOnUpdates(_ block: () -> ()) {
+        beginUpdates()
+        block()
+        endUpdates()
+    }
 }

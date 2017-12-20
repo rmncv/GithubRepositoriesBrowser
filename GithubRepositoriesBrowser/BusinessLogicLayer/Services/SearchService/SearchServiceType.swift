@@ -13,4 +13,5 @@ protocol SearchServiceType: class {
     func cancelSearch()
     func obtainAllRecentSearchRepositories() -> [GithubRepositoryPlain]
     func markAsViewed(_ repository: GithubRepositoryPlain)
+    func delete(_ repository: GithubRepositoryPlain)
 }

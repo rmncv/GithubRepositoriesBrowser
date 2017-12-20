@@ -17,7 +17,8 @@ protocol RepositoriesScreenViewInput: class {
     func setupInitialState(forState state: RepositoriesScreenConfigurator.State)
     func add(_ repositories: [GithubRepositoryPlain])
     func reloadData()
-    func makeCancelSearchButton(enabled: Bool)
+    func makeRightBarButtonItem(enabled: Bool)
     func makeActivityIndicator(hidden: Bool)
     func replace(_ repository: GithubRepositoryPlain, with newRepositry: GithubRepositoryPlain)
+    func delete(_ repository: GithubRepositoryPlain)
 }

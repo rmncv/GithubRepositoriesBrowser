@@ -41,4 +41,8 @@ class SearchServiceImpl: SearchServiceType {
     func markAsViewed(_ repository: GithubRepositoryPlain) {
         dbService.markAsViewed(repository: repository)
     }
+    
+    func delete(_ repository: GithubRepositoryPlain) {
+        dbService.delete(repository)
+    }
 }

@@ -26,7 +26,7 @@ class RepositoriesScreenPresenter: RepositoriesScreenModuleInput, RepositoriesSc
             searchInput = q
             requestNextPage(q: q)
         case .recent:
-            view.makeCancelSearchButton(enabled: false)
+            view.makeRightBarButtonItem(enabled: false)
             interactor.obtainAllPreviouslyStoredRepositories()
         }
     }
@@ -40,7 +40,7 @@ class RepositoriesScreenPresenter: RepositoriesScreenModuleInput, RepositoriesSc
     
     func didPressedCancelSearch() {
         interactor.cancelSearch()
-        view.makeCancelSearchButton(enabled: false)
+        view.makeRightBarButtonItem(enabled: false)
     }
     
     func setup(_ state: RepositoriesScreenConfigurator.State) {
@@ -50,9 +50,15 @@ class RepositoriesScreenPresenter: RepositoriesScreenModuleInput, RepositoriesSc
     func didObtain(_ repositories: [GithubRepositoryPlain]) {
         view.currentPage = view.currentPage + 1
         view.add(repositories)
-        view.makeCancelSearchButton(enabled: false)
         view.makeActivityIndicator(hidden: true)
         view.reloadData()
+        
+        switch state! {
+        case .search(_):
+            view.makeRightBarButtonItem(enabled: false)
+        case .recent:
+            view.makeRightBarButtonItem(enabled: true)
+        }
     }
     
     func didSelected(_ repository: GithubRepositoryPlain) {
@@ -67,9 +73,14 @@ class RepositoriesScreenPresenter: RepositoriesScreenModuleInput, RepositoriesSc
         view.replace(repository, with: copy)
     }
     
+    func didPressedDelete(_ repository: GithubRepositoryPlain) {
+        interactor.delete(repository)
+        view.delete(repository)
+    }
+    
     // MARK: - Tech
     private func requestNextPage(q: String) {
-        view.makeCancelSearchButton(enabled: true)
+        view.makeRightBarButtonItem(enabled: true)
         interactor.obtainRepositoriesWithName(startedWith: q, onPage: view.currentPage, itemsPerPage: view.itemsPerPage)
     }
 }

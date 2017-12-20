@@ -1,5 +1,5 @@
 //
-//  String+Extensions.swift
+//  String+Extension.swift
 //  GithubRepositoriesBrowser
 //
 //  Created by Denis Rumiantsev on 12/19/17.

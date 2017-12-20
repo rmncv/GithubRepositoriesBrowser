@@ -52,9 +52,25 @@ class GithubRepositoryDbServiceImpl: GithubRepositoryDbServiceType {
         guard let managedRepository = obtainRepositoryWith(Int32(repository.uuid)) else {
             return
         }
+        performInViewContext { _ in
+            managedRepository.isViewed = true
+        }
+    }
+    
+    func delete(_ repository: GithubRepositoryPlain) {
+        guard let managedRepository = obtainRepositoryWith(Int32(repository.uuid)) else {
+            return
+        }
+        performInViewContext { context in
+            context.delete(managedRepository)
+        }
+    }
+    
+    // MARK: - Tech
+    private func performInViewContext(_ block: @escaping (NSManagedObjectContext) -> Void) {
         let context = coreDataStack.persistentContainer.viewContext
         context.perform {
-            managedRepository.isViewed = true
+            block(context)
             do {
                 try context.save()
             } catch {

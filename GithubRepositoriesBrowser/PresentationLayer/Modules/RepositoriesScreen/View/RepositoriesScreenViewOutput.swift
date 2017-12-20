@@ -17,4 +17,5 @@ protocol RepositoriesScreenViewOutput {
     func didPressedCancelSearch()
     func didRequestNextRepositoriesPage()
     func didSelected(_ repository: GithubRepositoryPlain)
+    func didPressedDelete(_ repository: GithubRepositoryPlain)
 }

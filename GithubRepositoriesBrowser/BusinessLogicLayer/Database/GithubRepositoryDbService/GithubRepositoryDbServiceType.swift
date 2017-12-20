@@ -12,5 +12,6 @@ protocol GithubRepositoryDbServiceType: class {
     func obtainAll() -> [GithubRepository]
     func obtainRepositoryWith(_ uuid: Int32) -> GithubRepository?
     func save(_ repositories: [GithubRepositoryPlain])
+    func delete(_ repository: GithubRepositoryPlain)
     func markAsViewed(repository: GithubRepositoryPlain)
 }

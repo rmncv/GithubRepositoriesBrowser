@@ -37,4 +37,8 @@ class RepositoriesScreenInteractor: RepositoriesScreenInteractorInput {
     func markAsViewed(_ repository: GithubRepositoryPlain) {
         service.markAsViewed(repository)
     }
+    
+    func delete(_ repository: GithubRepositoryPlain) {
+        service.delete(repository)
+    }
 }
