@@ -18,9 +18,10 @@ class APIRepositoriesSearchServiceImpl: APIRepositoriesSearchServiceType {
         self.network = networkService
     }
     
-    func searchRepositoriesWith(name: String, onPage page: Int, itemsPerPage: Int, sortType: RepositorySearchType, completion: @escaping (RepositoriesSearchResult) -> Void) {
+    @discardableResult
+    func searchRepositoriesWith(name: String, onPage page: Int, itemsPerPage: Int, sortType: RepositorySearchType, completion: @escaping (RepositoriesSearchResult) -> Void) -> URLSessionTask { 
         let endpoint = GithubAPIEndpoint.repositories(q: name, sort: sortType.rawValue, page: page, perPage: itemsPerPage)
-        network.request(url: endpoint.requestURL) { result in
+        return network.request(url: endpoint.requestURL) { result in
             switch result {
                 
             case .success(let data):

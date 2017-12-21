@@ -29,7 +29,8 @@ class NetworkService {
         self.session = session
     }
     
-    func request(url: URL, method: HTTPMethod = .get, body: String = "", headers: [String: String] = [:], completion: @escaping (RequestResult) -> Void) {
+    @discardableResult
+    func request(url: URL, method: HTTPMethod = .get, body: String = "", headers: [String: String] = [:], completion: @escaping (RequestResult) -> Void) -> URLSessionTask {
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
@@ -47,5 +48,6 @@ class NetworkService {
             isSuccess ? completion(.success(data)) : completion(.error(RequestError.unknownError))
         }
         task.resume()
+        return task
     }
 }

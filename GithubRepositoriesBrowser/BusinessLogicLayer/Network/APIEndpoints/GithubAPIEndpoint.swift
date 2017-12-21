@@ -21,7 +21,7 @@ enum GithubAPIEndpoint {
         case .authorize(_, _):
             return URL(string: kBaseURL + "/authorizations")!
         case .repositories(let q, let sort, let page, let perPage):
-            return URL(string: kBaseURL + "/search/repositories?q=\(q)&sort=\(sort)&page=\(page)&per_page=\(perPage)")!
+            return URL(string: kBaseURL + "/search/repositories?q=\(q.addingPercentEncoding(withAllowedCharacters: .alphanumerics) ?? "")&sort=\(sort)&page=\(page)&per_page=\(perPage)")!
         }
     }
     

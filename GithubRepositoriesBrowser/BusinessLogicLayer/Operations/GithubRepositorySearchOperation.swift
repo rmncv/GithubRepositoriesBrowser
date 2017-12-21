@@ -15,6 +15,7 @@ class GithubRepositorySearchOperation: GRBOperation {
     private let requestParameters: GithubRepositorySearchParameters
     
     private(set) var requestResult = [GithubRepositoryPlain]()
+    private var currentRequest: URLSessionTask?
     
     init(api: APIRepositoriesSearchServiceType, parser: GithubRepositoryParserType, requestParameters: GithubRepositorySearchParameters) {
         self.api = api
@@ -29,7 +30,7 @@ class GithubRepositorySearchOperation: GRBOperation {
         }
         
         executing(true)
-        api.searchRepositoriesWith(name: requestParameters.name, onPage: requestParameters.page, itemsPerPage: requestParameters.itemsPerPage, sortType: requestParameters.sortType) { [weak self] result in
+        currentRequest = api.searchRepositoriesWith(name: requestParameters.name, onPage: requestParameters.page, itemsPerPage: requestParameters.itemsPerPage, sortType: requestParameters.sortType) { [weak self] result in
             guard let strongSelf = self else {
                 return
             }
@@ -46,5 +47,14 @@ class GithubRepositorySearchOperation: GRBOperation {
             strongSelf.finish(true)
             debugPrint("Did finished \(String(describing: self))")
         }
+    }
+    
+    override func cancel() {
+        super.cancel()
+        cancelNetworkRequest()
+    }
+    
+    private func cancelNetworkRequest() {
+        currentRequest?.cancel()
     }
 }

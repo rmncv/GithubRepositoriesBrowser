@@ -41,6 +41,7 @@ class RepositoriesScreenPresenter: RepositoriesScreenModuleInput, RepositoriesSc
     func didPressedCancelSearch() {
         interactor.cancelSearch()
         view.makeRightBarButtonItem(enabled: false)
+        view.makeActivityIndicator(hidden: true)
     }
     
     func setup(_ state: RepositoriesScreenConfigurator.State) {

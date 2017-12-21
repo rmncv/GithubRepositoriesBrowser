@@ -39,15 +39,18 @@ class RepositoriesOperationsSearchResolverImpl: RepositoriesOperationsSearchReso
         for i in 1 ... concurrentOperationCount {
             let searchParameters = GithubRepositorySearchParameters(name: text, page: lastRequestPage + i, itemsPerPage: itemsPerPage, sortType: sortType)
             let operation = GithubRepositorySearchOperation(api: api, parser: parser, requestParameters: searchParameters)
-            operation.completionBlock = {
+            let tail = BlockOperation {
                 self.lock.lock()
                 self.result += operation.requestResult
                 self.lock.unlock()
             }
-            resultOperation.addDependency(operation)
+            tail.addDependency(operation)
+            
+            resultOperation.addDependency(tail)
             operations.append(operation)
+            operations.append(tail)
         }
-        
+
         operations.append(resultOperation)
         
         operationQueue.addOperations(operations, waitUntilFinished: false)

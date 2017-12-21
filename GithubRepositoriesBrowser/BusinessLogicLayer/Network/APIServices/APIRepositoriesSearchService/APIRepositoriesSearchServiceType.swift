@@ -20,5 +20,6 @@ enum RepositorySearchError: Swift.Error {
 }
 
 protocol APIRepositoriesSearchServiceType: class {
-    func searchRepositoriesWith(name: String, onPage page: Int, itemsPerPage: Int, sortType: RepositorySearchType, completion: @escaping (RepositoriesSearchResult) -> Void)
+    @discardableResult
+    func searchRepositoriesWith(name: String, onPage page: Int, itemsPerPage: Int, sortType: RepositorySearchType, completion: @escaping (RepositoriesSearchResult) -> Void) -> URLSessionTask
 }
